@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>What’s in the head Metadata in HTML</title>
+	</head>
+	<body>
+		<!-- What is the HTML head? -->
+		<!DOCTYPE html>
+		<html>
+			<head>
+				<meta charset="utf-8" />
+				<!-- Adding a title -->
+				<title>My test page</title>
+			</head>
+			<body>
+				<p>This is my page</p>
+			</body>
+		</html>
+
+		<!-- Metadata: the <meta> element -->
+
+		<!-- Specifying your document's character encoding -->
+		<meta charset="utf-8" />
+
+		<!-- Adding an author and description -->
+		<meta name="author" content="Chris Mills" />
+		<meta
+			name="description"
+			content="The MDN Web Docs Learning Area aims to provide
+complete beginners to the Web with all they need to know to get
+started with developing web sites and applications."
+		/>
+
+		<!-- Other types of metadata -->
+
+		<!-- Open Graph Data is a metadata protocol that Facebook invented to provide richer metadata for websites -->
+		<meta
+			property="og:image"
+			content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png"
+		/>
+		<meta
+			property="og:description"
+			content="The Mozilla Developer Network (MDN) provides
+information about Open Web technologies including HTML, CSS, and APIs for both Web sites
+and HTML5 Apps. It also documents Mozilla products, like Firefox OS."
+		/>
+		<meta property="og:title" content="Mozilla Developer Network" />
+
+		<!-- Twitter also has its own similar proprietary metadata called Twitter Cards, which has a similar effect when the site's URL is displayed on twitter.com -->
+		<meta name="twitter:title" content="Mozilla Developer Network" />
+
+		<!-- Adding custom icons to your site -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<!-- third-generation iPad with high-resolution Retina display: -->
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="144x144"
+			href="https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png"
+		/>
+		<!-- iPhone with high-resolution Retina display: -->
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="114x114"
+			href="https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png"
+		/>
+		<!-- first- and second-generation iPad: -->
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="72x72"
+			href="https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png"
+		/>
+		<!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png"
+		/>
+		<!-- basic favicon -->
+		<link
+			rel="shortcut icon"
+			href="https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png"
+		/>
+
+		<!-- Applying CSS and JavaScript to HTML -->
+		<link rel="stylesheet" href="my-css-file.css" />
+		<script src="my-js-file.js" defer></script>
+
+		<!-- Setting the primary language of the document -->
+		<html lang="en-US"></html>
+		<p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+	</body>
+</html>
