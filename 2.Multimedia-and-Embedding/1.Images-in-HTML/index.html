@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Images in HTML</title>
+		<!-- CSS background images -->
+		<style>
+			p {
+				background-image: url('images/dinosaur.jpg');
+			}
+		</style>
+	</head>
+	<body>
+		<!-- How do we put an image on a webpage? -->
+		<img src="dinosaur.jpg" />
+
+		<!-- if the image was in an images subdirectory, which was inside the same directory as the HTML page (which Google recommends for SEO/indexing purposes), then you'd embed it like this: -->
+
+		<img src="images/dinosaur.jpg" />
+
+		<!-- You could embed the image using its absolute URL -->
+		<img src="https://www.example.com/images/dinosaur.jpg" />
+
+		<!-- Alternative text -->
+		<img
+			src="images/dinosaur.jpg"
+			alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth"
+		/>
+
+		<!-- Width and height -->
+
+		<img
+			src="images/dinosaur.jpg"
+			alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth"
+			width="400"
+			height="341"
+		/>
+
+		<!-- Image titles -->
+		<img
+			src="images/dinosaur.jpg"
+			alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth"
+			width="400"
+			height="341"
+			title="A T-Rex on display in the Manchester University Museum"
+		/>
+
+		<!-- Annotating images with figures and figure captions -->
+		<figure>
+			<img
+				src="images/dinosaur.jpg"
+				alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+				width="400"
+				height="341"
+			/>
+
+			<figcaption>
+				A T-Rex on display in the Manchester University Museum.
+			</figcaption>
+		</figure>
+	</body>
+</html>
