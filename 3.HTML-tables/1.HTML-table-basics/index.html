@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML table basics</title>
+		<style>
+			html {
+				font-family: sans-serif;
+			}
+
+			table {
+				border-collapse: collapse;
+				border: 2px solid rgb(200, 200, 200);
+				letter-spacing: 1px;
+				font-size: 0.8rem;
+			}
+
+			td,
+			th {
+				border: 1px solid rgb(190, 190, 190);
+				padding: 10px 20px;
+			}
+
+			td {
+				text-align: center;
+			}
+
+			caption {
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- What is a table ? -->
+
+		<!-- How does a table work? -->
+
+		<!-- Table styling -->
+
+		<!-- When should you NOT use HTML tables?
+
+Layout tables reduce accessibility for visually impaired users
+
+Tables produce tag soup
+
+Tables are not automatically responsive
+-->
+
+		<!-- Creating your first table -->
+		<table>
+			<tr>
+				<td>Hi, I'm your first cell.</td>
+				<td>I'm your second cell.</td>
+				<td>I'm your third cell.</td>
+				<td>I'm your fourth cell.</td>
+			</tr>
+		</table>
+
+		<!-- Adding headers with <th> elements -->
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<th scope="col">Knocky</th>
+				<th scope="col">Flor</th>
+				<th scope="col">Ella</th>
+				<th scope="col">Juan</th>
+			</tr>
+			<tr>
+				<th scope="row">Breed</th>
+				<td>Jack Russell</td>
+				<td>Poodle</td>
+				<td>Streetdog</td>
+				<td>Cocker Spaniel</td>
+			</tr>
+			<tr>
+				<th scope="row">Age</th>
+				<td>16</td>
+				<td>9</td>
+				<td>10</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th scope="row">Owner</th>
+				<td>Mother-in-law</td>
+				<td>Me</td>
+				<td>Me</td>
+				<td>Sister-in-law</td>
+			</tr>
+			<tr>
+				<th scope="row">Eating Habits</th>
+				<td>Eats everyone's leftovers</td>
+				<td>Nibbles at food</td>
+				<td>Hearty eater</td>
+				<td>Will eat till he explodes</td>
+			</tr>
+		</table>
+
+		<!-- Allowing cells to span multiple rows and columns -->
+		<table>
+			<tr>
+				<th colspan="2">Animals</th>
+			</tr>
+			<tr>
+				<th colspan="2">Hippopotamus</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Horse</th>
+				<td>Mare</td>
+			</tr>
+			<tr>
+				<td>Stallion</td>
+			</tr>
+			<tr>
+				<th colspan="2">Crocodile</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Chicken</th>
+				<td>Hen</td>
+			</tr>
+			<tr>
+				<td>Rooster</td>
+			</tr>
+		</table>
+
+		<!-- Providing common styling to columns -->
+		<table>
+			<tr>
+				<th>Data 1</th>
+				<th style="background-color: yellow;">Data 2</th>
+			</tr>
+			<tr>
+				<td>Calcutta</td>
+				<td style="background-color: yellow;">Orange</td>
+			</tr>
+			<tr>
+				<td>Robots</td>
+				<td style="background-color: yellow;">Jazz</td>
+			</tr>
+		</table>
+
+		<table>
+			<colgroup>
+				<col />
+				<col style="background-color: yellow;" />
+			</colgroup>
+			<tr>
+				<th>Data 1</th>
+				<th>Data 2</th>
+			</tr>
+			<tr>
+				<td>Calcutta</td>
+				<td>Orange</td>
+			</tr>
+			<tr>
+				<td>Robots</td>
+				<td>Jazz</td>
+			</tr>
+		</table>
+
+		<!-- colgroup and col -->
+
+		<table>
+			<colgroup>
+				<col span="2" />
+				<col style="background-color: #97db9a;" />
+				<col style="width: 42px;" />
+				<col style="background-color: #97db9a;" />
+				<col style="background-color: #dcc48e; border: 4px solid #c1437a;" />
+				<col span="2" style="width: 42px;" />
+			</colgroup>
+			<tr>
+				<td>&nbsp;</td>
+				<th>Mon</th>
+				<th>Tues</th>
+				<th>Wed</th>
+				<th>Thurs</th>
+				<th>Fri</th>
+				<th>Sat</th>
+				<th>Sun</th>
+			</tr>
+			<tr>
+				<th>1st period</th>
+				<td>English</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>German</td>
+				<td>Dutch</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th>2nd period</th>
+				<td>English</td>
+				<td>English</td>
+				<td>&nbsp;</td>
+				<td>German</td>
+				<td>Dutch</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th>3rd period</th>
+				<td>&nbsp;</td>
+				<td>German</td>
+				<td>&nbsp;</td>
+				<td>German</td>
+				<td>Dutch</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th>4th period</th>
+				<td>&nbsp;</td>
+				<td>English</td>
+				<td>&nbsp;</td>
+				<td>English</td>
+				<td>Dutch</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
