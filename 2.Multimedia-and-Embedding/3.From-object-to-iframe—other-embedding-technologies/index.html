@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>From object to iframe -- other embedding technologies</title>
+	</head>
+	<body>
+		<!-- Iframes in detail -->
+		<iframe
+			src="https://developer.mozilla.org/en-US/docs/Glossary"
+			width="100%"
+			height="500"
+			frameborder="0"
+			allowfullscreen
+			sandbox
+		>
+			<p>
+				<a href="https://developer.mozilla.org/en-US/docs/Glossary">
+					Fallback link for browsers that don't support iframes
+				</a>
+			</p>
+		</iframe>
+
+		<!-- Security concerns -->
+
+		<!-- Only embed when necessary -->
+
+		<!-- Use HTTPS -->
+
+		<!-- Always use the sandbox attribute -->
+
+		<!-- Configure CSP directives -->
+
+		<!-- The <embed> and <object> elements -->
+
+		<embed
+			src="whoosh.swf"
+			quality="medium"
+			bgcolor="#ffffff"
+			width="550"
+			height="400"
+			name="whoosh"
+			align="middle"
+			allowScriptAccess="sameDomain"
+			allowFullScreen="false"
+			type="application/x-shockwave-flash"
+			pluginspage="http://www.macromedia.com/go/getflashplayer"
+		/>
+
+		<object
+			data="mypdf.pdf"
+			type="application/pdf"
+			width="800"
+			height="1200"
+			typemustmatch
+		>
+			<p>
+				You don't have a PDF plugin, but you can
+				<a href="mypdf.pdf">download the PDF file. </a>
+			</p>
+		</object>
+
+		<!-- The case against plugins -->
+	</body>
+</html>
